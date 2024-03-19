@@ -202,9 +202,9 @@ const Header = () => {
                   size="large"
                   count={cartSize ? cartSize : 0}
                   offset={[10, 5]}
-                >
+                > */}
                   <h5>CART</h5>
-                </Badge> */}
+                {/* </Badge> */}
               </Link>
             </li>
           </ul>
