@@ -29,7 +29,7 @@ const HomePage = () => {
   const getAllProducts = async () => {
     try {
       let response = await axios.get(
-        "http://localhost:8080/api/v1/product/get-products"
+        "https://ecommerce-9l9b.onrender.com/api/v1/product/get-products"
       );
       console.log(response.data.allproducts);
       setAllProducts(response.data.allproducts);
@@ -44,7 +44,7 @@ const HomePage = () => {
   const getAllCategories = async () => {
     try {
       let response = await axios.get(
-        "http://localhost:8080/api/v1/category/get-allcategory"
+        "https://ecommerce-9l9b.onrender.com/api/v1/category/get-allcategory"
       );
 
       setAllCategories(response.data.allCategory);
@@ -58,7 +58,7 @@ const HomePage = () => {
   //     console.log(product._id);
   //     try {
   //       const response = await axios.get(
-  //         `http://localhost:8080/api/v1/review/count/${product._id}`
+  //         `https://ecommerce-9l9b.onrender.com/api/v1/review/count/${product._id}`
   //       );
   //       console.log(response.data);
   //     } catch (error) {
@@ -85,7 +85,7 @@ const HomePage = () => {
   const filterProduct = async () => {
     try {
       let response = await axios.post(
-        "http://localhost:8080/api/v1/product/product-filters",
+        "https://ecommerce-9l9b.onrender.com/api/v1/product/product-filters",
         { catFilter, radioFilter }
       );
       // console.log(response.data.filteredData);
@@ -161,7 +161,7 @@ const HomePage = () => {
                       item._id && (
                         <img
                           alt="example"
-                          src={`http://localhost:8080/api/v1/product/get-product-photo/${item._id}`}
+                          src={`https://ecommerce-9l9b.onrender.com/api/v1/product/get-product-photo/${item._id}`}
                         />
                       )
                     }
