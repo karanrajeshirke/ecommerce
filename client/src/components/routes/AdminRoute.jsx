@@ -13,7 +13,7 @@ function AdminRoute() {
     const authCheck = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/api/v1/auth/admin-auth",
+          "https://ecommerce-9l9b.onrender.com/api/v1/auth/admin-auth",
           {
             headers: {
               Authorization: auth.token,
